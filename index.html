@@ -26,8 +26,8 @@
 
     </header>
     <main class="mx-12 mt-20">
-        <!-- Calculation Area -->
-        <div class="flex-1">
+        
+        <div class="justify-between grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 ">
             <!-- for triangle -->
             <div class="card w-96 bg-base-100 shadow-xl ">
                 <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
@@ -35,7 +35,7 @@
                     <h2 class="font-bold text-3xl text-center">Triangle</h2>
                     <p>Area A = 0.5 X b X h</p>
                    <div class="">
-                    <input type="number" class="w-24 bg-slate-200" name="" id="triangleBase" placeholder="base" >
+                    <input type="text" class="w-24 bg-slate-200" name="" id="triangleBase" placeholder="base" >
                     <span class="mx-2">cm</span>
                     <input type="number" class="w-24 bg-slate-200" name="" id="triangleHeight" placeholder="height">
                     <span>cm</span>
@@ -50,32 +50,50 @@
             </div>
 
 
-            <!-- for rectangle  -->
+            <!-- for ellipse  -->
             <div class="card w-96 bg-base-100 shadow-xl ">
                 <figure><img src="./images/rectangle.png" alt="Rectangle" /></figure>
                 <div class="card-body text-center">
                     <h2 class="font-bold text-3xl text-center">Rectangle</h2>
                     <p>Area A = b X h</p>
                     <div class="">
-                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleBase" placeholder="base">
+                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleBase" placeholder="Width">
                         <span class="mx-2">cm</span>
-                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleHeight" placeholder="height">
+                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleHeight" placeholder="Height">
                         <span>cm</span>
                     </div>
                     <div class="mt-1">
-                        <span>Rectangle Area is:</span> <span id="triangleSetArea">0</span><span>cm<sup>2</sup></span>
+                        <span>Rectangle Area is:</span> <span id="rectangleSetArea">0</span><span>cm<sup>2</sup></span>
                     </div>
                     <div class="card-actions  mt-4">
                         <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
+
+                <div class="card w-96 bg-base-100 shadow-xl ">
+                    <figure><img src="./images/ellipse.png" alt="Ellipse" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Ellipse</h2>
+                        <p>Area A = π X R X R  </p>
+                        <div class="">
+                            <input type="number" class="w-24 bg-slate-200" name="" id="ellipseRadius" placeholder="Radius">
+                            <span class="mx-2">cm</span>
+                          
+                        </div>
+                        <div class="mt-1">
+                            <span>Ellipse Area is:</span> <span id="ellipseSetArea">0</span><span>cm<sup>2</sup></span>
+                        </div>
+                        <div class="card-actions  mt-4">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
         </div>
 
-        <!-- Result Area -->
-        <div class="w-24">
-
-        </div>
+      
 
     </main>
    
