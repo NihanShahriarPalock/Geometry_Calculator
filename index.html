@@ -27,7 +27,7 @@
     </header>
     <main class="mx-12 mt-20">
         <!-- Calculation Area -->
-        <div>
+        <div class="flex-1">
             <!-- for triangle -->
             <div class="card w-96 bg-base-100 shadow-xl ">
                 <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
@@ -35,20 +35,45 @@
                     <h2 class="font-bold text-3xl text-center">Triangle</h2>
                     <p>Area A = 0.5 X b X h</p>
                    <div class="">
-                    <input type="number" class="w-24 bg-slate-200" name="" id="" placeholder="b" >
+                    <input type="number" class="w-24 bg-slate-200" name="" id="triangleBase" placeholder="base" >
                     <span class="mx-2">cm</span>
-                    <input type="number" class="w-24 bg-slate-200" name="" id="" placeholder="h">
+                    <input type="number" class="w-24 bg-slate-200" name="" id="triangleHeight" placeholder="height">
                     <span>cm</span>
                    </div>
-                    <div class="card-actions  mt-6">
-                        <button class="btn btn-primary w-full">Buy Now</button>
+                   <div class="mt-1">
+                    <span>Triangle Area is:</span> <span id="triangleSetArea">0</span><span>cm<sup>2</sup></span>
+                   </div>
+                    <div class="card-actions  mt-4">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- for rectangle  -->
+            <div class="card w-96 bg-base-100 shadow-xl ">
+                <figure><img src="./images/rectangle.png" alt="Rectangle" /></figure>
+                <div class="card-body text-center">
+                    <h2 class="font-bold text-3xl text-center">Rectangle</h2>
+                    <p>Area A = b X h</p>
+                    <div class="">
+                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleBase" placeholder="base">
+                        <span class="mx-2">cm</span>
+                        <input type="number" class="w-24 bg-slate-200" name="" id="rectangleHeight" placeholder="height">
+                        <span>cm</span>
+                    </div>
+                    <div class="mt-1">
+                        <span>Rectangle Area is:</span> <span id="triangleSetArea">0</span><span>cm<sup>2</sup></span>
+                    </div>
+                    <div class="card-actions  mt-4">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Result Area -->
-        <div>
+        <div class="w-24">
 
         </div>
 
