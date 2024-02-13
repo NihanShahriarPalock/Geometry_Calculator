@@ -12,7 +12,6 @@ function calculateTriangleArea() {
     const triangleBase = getInputValue('triangleBase');
     const triangleHeight = getInputValue('triangleHeight')
     const triangleArea = 0.5 * triangleBase * triangleHeight;
-    console.log(triangleArea);
    
     //  Display Value in span tag
     const spanTriangleArea = document.getElementById('triangleSetArea');
@@ -24,7 +23,6 @@ function calculateRectangleArea() {
     const rectangleBase = getInputValue('rectangleBase');
     const rectangleHeight = getInputValue('rectangleHeight')
     const rectangleArea = 0.5 * rectangleBase * rectangleHeight;
-    console.log(rectangleArea);
 
     //  Display Value in span tag
     const spanRectangleArea = document.getElementById('rectangleSetArea');
@@ -32,11 +30,10 @@ function calculateRectangleArea() {
 
 }
 
+// Calculate Ellipse Area
 function calculateEllipseArea() {
     const ellipseRadius = getInputValue('ellipseRadius');
-
     const ellipseArea = 3.1416 * ellipseRadius * ellipseRadius;
-    console.log(ellipseArea);
 
     //  Display Value in span tag
     const spanEllipseArea = document.getElementById('ellipseSetArea');
