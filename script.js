@@ -32,8 +32,9 @@ function calculateRectangleArea() {
 
 // Calculate Ellipse Area
 function calculateEllipseArea() {
-    const ellipseRadius = getInputValue('ellipseRadius');
-    const ellipseArea = 3.1416 * ellipseRadius * ellipseRadius;
+    const ellipseMajor = getInputValue('ellipseMajor');
+    const ellipseMinor = getInputValue('ellipseMinor');
+    const ellipseArea = 3.1416 * ellipseMajor * ellipseMinor;
 
     //  Display Value in span tag
     const spanEllipseArea = document.getElementById('ellipseSetArea');
@@ -41,3 +42,15 @@ function calculateEllipseArea() {
 
 }
 
+// Calculate Pentagon Area
+
+function calculatePentagonArea() {
+    const pentagonP = getInputValue('pentagonP');
+    const pentagonB = getInputValue('pentagonB');
+    const pentagonArea = 0.5 * pentagonP * pentagonB;
+
+    //  Display Value in span tag
+    const spanPentagonArea = document.getElementById('pentagonSetArea');
+    spanPentagonArea.innerText = pentagonArea;
+
+}
